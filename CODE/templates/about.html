@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    body {
+      background-color: #E4FBFF;
+      background-attachment:fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu-bar {
+    position:absolute;
+    justify-content: center;
+    border-radius: 25px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: inline-flex;
+    background-color: black;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: 0 10px;
+    margin: 50px 0 0 0;
+  }
+  .menu-bar li {
+    list-style: none;
+    /* background-color: #ff4040 */
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 12px 16px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 25px;
+  }
+  .menu-bar li:hover {
+    color: black;
+  }
+  a:hover{
+    color: black;
+  }
+  .menu-bar li:hover::before {
+    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+    box-shadow: 0px 3px 20px 0px black;
+    transform: scale(1.2);
+  }
+  .anpr{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+  }
+
+
+  .anpr-img{
+    width: 350px;
+    height: 250px;
+    float: left;
+    position: relative;
+    margin-right: 40px;
+  }
+  h3{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h2{
+  color: #66BFBF ;
+  font-family: 'Montserrat', sans-serif;
+  font-size:2.5rem ;
+  padding-bottom: 10px;
+
+}
+.about{
+  position: fixed;
+  top: 230px;
+  <!-- left : 150; -->
+
+}
+
+
+.h2{
+  position:relative;
+  left:75px;
+  top:125px;
+}
+    </style>
+  </head>
+  <body>
+
+
+    <ul class="menu-bar">
+
+        <li>Home</li>
+        <li><a href='{{url_for('english_detection')}}'> Detect English Plate </a></li>
+        <li><a href='{{url_for('marathi_detection')}}'> Detect Marathi Plate </a></li>
+        <li><a href='{{url_for('about')}}'>About</li>
+        <li>Contact</li>
+    </ul>
+
+    <div class = "h2">
+      <h2>ANPR System using YOLO v5 Machine Learning Model</h2>
+    </div>
+    <div class = "about">
+      <div class="anpr">
+          <img class="anpr-img" src="https://3.imimg.com/data3/QA/GM/FCP-3204582/images-stories-klipr_image-500x500.jpg" alt="Games">
+          <h3>ANPR Using YOLO v5 Model</h3>
+          <p>Automatic number plate recognition is a computer vision practice that allows devices to read license number plates on vehicles quickly and automatically, without any human interaction. Hence, ANPR is used to capture and identify any number plate accurately through the use of video or photo footage from cameras.</p>
+      </div>
+    </div>
+
+
+</body>
+</html>
