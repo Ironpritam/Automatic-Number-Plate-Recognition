@@ -1,6 +1,6 @@
 # Automatic Number Plate Recognition (ANPR) System for Indian Vehicles
 
-> A production-ready Computer Vision & Multi-Lingual Optical Character Recognition (OCR) pipeline leveraging fine-tuned **YOLOv5**, morphological image deskewing/enhancement, offline Devanagari transliteration, and a Flask RESTful API.
+> An end-to-end Computer Vision & Bi-Lingual Optical Character Recognition (OCR) pipeline leveraging fine-tuned **YOLOv5**, morphological image deskewing/enhancement, offline Devanagari transliteration, and a Flask RESTful API.
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9%2B-EE4C2C.svg)](https://pytorch.org/)
