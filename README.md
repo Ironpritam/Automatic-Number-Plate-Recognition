@@ -34,7 +34,7 @@ The research behind this system has been peer-reviewed and published in the **In
 
 ### 🌐 3. Multi-Lingual OCR Engine (English + Devanagari Script)
 - **Dual Script Recognition**: Supports standard English (Latin alphanumeric) and regional Marathi (Devanagari) plates.
-- **Offline Devanagari Parser**: Features a pure Python transliteration mapping engine (`०-९` $\rightarrow$ `0-9` and state codes like `महाराष्ट्र` $\rightarrow$ `MH`) ensuring 100% offline accuracy without network dependencies.
+- **Offline Devanagari Parser**: Features a pure Python transliteration mapping engine (`०-९` $\rightarrow$ `0-9` and state codes like `महाराष्ट्र` $\rightarrow$ `MH`) ensuring 100% offline parsing without network dependencies.
 - **Online Fallback**: Integrated fallback handling via `googletrans` API.
 
 ### ⚡ 4. Enterprise Architecture & REST API
